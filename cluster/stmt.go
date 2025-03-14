@@ -71,6 +71,7 @@ func StmtString(code int) (string, error) {
 	return "", fmt.Errorf("No prepared statement registered with code %d", code)
 }
 
+// Deprecated.
 // GetCallerProject will get the go project name of whichever function called `GetCallerProject`.
 func GetCallerProject() string {
 	sep := string(os.PathSeparator)
